@@ -1,199 +1,191 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-
-<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-app_2_4.xsd"
-    version="2.4">
-    
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-app_2_4.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.4">
   <display-name>OA</display-name>
   <description>OA for bwm work</description>
-  
-  <!-- servlet-class -->
   <servlet>
-  	<servlet-name>info.del</servlet-name>
+    <servlet-name>info.del</servlet-name>
     <servlet-class>com.info.Del</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>info.read</servlet-name>
+    <servlet-name>info.read</servlet-name>
     <servlet-class>com.info.Read</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>info.view</servlet-name>
+    <servlet-name>info.view</servlet-name>
     <servlet-class>com.info.View</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>info.send</servlet-name>
+    <servlet-name>info.send</servlet-name>
     <servlet-class>com.info.Send</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>bumf.complete</servlet-name>
+    <servlet-name>bumf.complete</servlet-name>
     <servlet-class>com.bumf.Complete</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>bumf.see</servlet-name>
+    <servlet-name>bumf.see</servlet-name>
     <servlet-class>com.bumf.See</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>bumf.accept</servlet-name>
+    <servlet-name>bumf.accept</servlet-name>
     <servlet-class>com.bumf.Accept</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>bumf.save</servlet-name>
+    <servlet-name>bumf.save</servlet-name>
     <servlet-class>com.bumf.Save</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>bumf.send</servlet-name>
+    <servlet-name>bumf.send</servlet-name>
     <servlet-class>com.bumf.Send</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>emex.add</servlet-name>
+    <servlet-name>emex.add</servlet-name>
     <servlet-class>com.emex.Add</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>emex.view</servlet-name>
+    <servlet-name>emex.view</servlet-name>
     <servlet-class>com.emex.View</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>emex.del</servlet-name>
+    <servlet-name>emex.del</servlet-name>
     <servlet-class>com.emex.Del</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>affice.add</servlet-name>
+    <servlet-name>affice.add</servlet-name>
     <servlet-class>com.affice.Add</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>affice.view</servlet-name>
+    <servlet-name>affice.view</servlet-name>
     <servlet-class>com.affice.View</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>affice.del</servlet-name>
+    <servlet-name>affice.del</servlet-name>
     <servlet-class>com.affice.Del</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>login.main</servlet-name>
+    <servlet-name>login.main</servlet-name>
     <servlet-class>com.login.Main</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>login.admin</servlet-name>
+    <servlet-name>login.admin</servlet-name>
     <servlet-class>com.login.Admin</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>login.em</servlet-name>
+    <servlet-name>login.em</servlet-name>
     <servlet-class>com.login.Em</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>sign.signstate</servlet-name>
+    <servlet-name>sign.signstate</servlet-name>
     <servlet-class>com.sign.Signstate</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>sign.state</servlet-name>
+    <servlet-name>sign.state</servlet-name>
     <servlet-class>com.sign.State</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>sign.sign</servlet-name>
+    <servlet-name>sign.sign</servlet-name>
     <servlet-class>com.sign.Sign</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>sign.view</servlet-name>
+    <servlet-name>sign.view</servlet-name>
     <servlet-class>com.sign.View</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>department.depview</servlet-name>
+    <servlet-name>department.depview</servlet-name>
     <servlet-class>com.department.View</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>department.depadd</servlet-name>
+    <servlet-name>department.depadd</servlet-name>
     <servlet-class>com.department.Add</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>department.depsel</servlet-name>
+    <servlet-name>department.depsel</servlet-name>
     <servlet-class>com.department.Select</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>department.depcha</servlet-name>
+    <servlet-name>department.depcha</servlet-name>
     <servlet-class>com.department.Change</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>department.depdel</servlet-name>
+    <servlet-name>department.depdel</servlet-name>
     <servlet-class>com.department.Del</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>job.depview</servlet-name>
+    <servlet-name>job.depview</servlet-name>
     <servlet-class>com.job.View</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>job.depadd</servlet-name>
+    <servlet-name>job.depadd</servlet-name>
     <servlet-class>com.job.Add</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>job.depsel</servlet-name>
+    <servlet-name>job.depsel</servlet-name>
     <servlet-class>com.job.Select</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>job.depcha</servlet-name>
+    <servlet-name>job.depcha</servlet-name>
     <servlet-class>com.job.Change</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>job.depdel</servlet-name>
+    <servlet-name>job.depdel</servlet-name>
     <servlet-class>com.job.Del</servlet-class>
   </servlet>
   <servlet>
- 	<servlet-name>emstate.depview</servlet-name>
+    <servlet-name>emstate.depview</servlet-name>
     <servlet-class>com.emstate.View</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>emstate.depadd</servlet-name>
+    <servlet-name>emstate.depadd</servlet-name>
     <servlet-class>com.emstate.Add</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>emstate.depsel</servlet-name>
+    <servlet-name>emstate.depsel</servlet-name>
     <servlet-class>com.emstate.Select</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>emstate.depcha</servlet-name>
+    <servlet-name>emstate.depcha</servlet-name>
     <servlet-class>com.emstate.Change</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>emstate.depdel</servlet-name>
+    <servlet-name>emstate.depdel</servlet-name>
     <servlet-class>com.emstate.Del</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>em.add</servlet-name>
+    <servlet-name>em.add</servlet-name>
     <servlet-class>com.em.Add</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>em.save</servlet-name>
+    <servlet-name>em.save</servlet-name>
     <servlet-class>com.em.Save</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>em.view</servlet-name>
+    <servlet-name>em.view</servlet-name>
     <servlet-class>com.em.View</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>em.select</servlet-name>
+    <servlet-name>em.select</servlet-name>
     <servlet-class>com.em.Select</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>em.del</servlet-name>
+    <servlet-name>em.del</servlet-name>
     <servlet-class>com.em.Del</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>sys.set</servlet-name>
+    <servlet-name>sys.set</servlet-name>
     <servlet-class>com.sys.Set</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>sys.active</servlet-name>
+    <servlet-name>sys.active</servlet-name>
     <servlet-class>com.sys.Active</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>sys.del</servlet-name>
+    <servlet-name>sys.del</servlet-name>
     <servlet-class>com.sys.Del</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>temp.my</servlet-name>
+    <servlet-name>temp.my</servlet-name>
     <servlet-class>com.temp.My</servlet-class>
   </servlet>
-  <!-- servlet-mapping -->
   <servlet-mapping>
     <servlet-name>temp.my</servlet-name>
     <url-pattern>/temp/my</url-pattern>
@@ -378,11 +370,10 @@
     <servlet-name>sys.del</servlet-name>
     <url-pattern>/sys/del</url-pattern>
   </servlet-mapping>
-  <!-- jndi -->
   <resource-ref>
-      <description>DB Connection</description>
-      <res-ref-name>jdbc/OA</res-ref-name>
-      <res-type>javax.sql.DataSource</res-type>
-      <res-auth>Container</res-auth>
+    <description>DB Connection</description>
+    <res-ref-name>jdbc/OA</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
   </resource-ref>
 </web-app>
